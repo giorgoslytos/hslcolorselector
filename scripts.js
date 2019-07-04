@@ -1,3 +1,10 @@
+/*
+  Created by Georgios Litos, Thessaloniki, Greece
+  email: giorgoslytos@gmail.com
+  github: https://github.com/giorgoslytos
+  Google Fonts - https://fonts.google.com/
+  Terms of Service - https://policies.google.com/terms?hl=en
+*/
 var hue;
 var saturation;
 var lightness;
@@ -40,7 +47,6 @@ function hueHSL(event) {
 }
 // control lightness levels
 async function lightHSL(event) {
-  console.log("scrolled");
   if (-lightness >= 0 && lightness >= -100) {
     lightness += event.deltaY * 0.02;
     if (-lightness < 0) {
