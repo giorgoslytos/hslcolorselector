@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+* {
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: white;
+}
+header {
+  margin: 2em;
+}
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 1em;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  width: 12em;
+  padding: 0.1em;
+  margin: auto;
+}
+h2 {
+  font-size: 1em;
+  text-align: center;
+  margin: 1em;
+  font-family: "Montserrat";
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 12em;
+  padding: 0.1em;
+  margin: auto;
+}
+h3{
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+#scrollpad:hover + .tooltip {
+  visibility: visible;
+}
+/* .tooltip {
+  position: absolute;
+  visibility: hidden;
+  width: 720px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 2px;
+  top: -30px;
+  left: 50%;
+  margin-left: -150px;
+  text-align: center;
+} */
+#saturationlabel {
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  right: -28px;
+  /* height: 12rem;
+  width: 2rem; */
+  text-align: center;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#huelabel, .tooltip {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+#huelabel {  
+  width: 720px;
+  bottom: -28px;
+}
+.tooltip{
+  top:-30px;
+  visibility: hidden;
+width: 500px;
+margin-left: 110px;
+}
+.scrollpad-wrapper {
+  position: relative;
+  margin: 2rem auto;
+  /* margin: 0 auto; */
+  width: 720px;
+  height: 200px;
+}
+.results {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  margin: 3em;
+  margin-bottom: 0em;
+}
+.HSLcode {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1em;
+  margin: auto;
+  min-width: 280px;
+
+}
+.RGBcode {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1em;
+  margin: auto;
+  min-width: 280px;
+
+
+}
+.RGBhexcode {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1em;
+  margin: auto;
+  min-width: 280px;
+  position: relative;
+
+}
+#RGBcode, #HSLcode, #RGBhexcode, #hue, #saturation, #lightness, #red, #green, #blue{
+  position: absolute;
+  right: 20px;
+}
+.HSLcode, .RGBcode{
+  position: relative;
+}
+@media only screen and (max-height: 590px) {
+  body {
+    background-color: lightblue;
+  }
+}

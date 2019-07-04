@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>JS course</title>
+
+</head>
+
+<body>
+  <header>
+    <h2>a most handful</h2>
+    <h1>HSL Color Selector</h1>
+  </header>
+  <section>
+    <div class="scrollpad-wrapper">
+      <canvas id="scrollpad"></canvas>
+      <span class="tooltip">Scroll to adjust lightness / click to freeze</span>
+      <div id="saturationlabel">Adjust saturation</div>
+      <div id="huelabel">Adjust hue</div>
+    </div>
+    <div class="results">
+      <div class="HSLcode">
+        <h3>HSL code: </h3><span id="HSLcode"></span><br />
+        hue: <span id="hue"></span><br />
+        saturation: <span id="saturation"></span><br />
+        lightness: <span id="lightness"></span><br />
+      </div>
+      <div class="RGBcode">
+        <h3>RGB code: </h3>
+        <span id="RGBcode"></span><br />
+        red: <span id="red"></span><br />
+        green: <span id="green"></span><br />
+        blue: <span id="blue"></span><br />
+      </div>
+      <div class="RGBhexcode">
+        <h3>RGB hex code: </h3><span id="RGBhexcode"></span><br />
+      </div>
+    </div>
+  </section>
+  <script src="createCanvas.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
