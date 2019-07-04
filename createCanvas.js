@@ -2,8 +2,6 @@
   Created by Georgios Litos, Thessaloniki, Greece
   email: giorgoslytos@gmail.com
   github: https://github.com/giorgoslytos
-  Google Fonts - https://fonts.google.com/
-  Terms of Service - https://policies.google.com/terms?hl=en
 */
 function createCanvas(light) {
   var canvas = document.querySelector('canvas');
@@ -22,7 +20,7 @@ function createCanvas(light) {
     }
   }
 
-  // creating pixel 
+  // creating pixelArray of Pixels 
   var pixelArray = [];
   var k = 0;
   for (let i = 0; i < 361; i++) {

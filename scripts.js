@@ -2,8 +2,6 @@
   Created by Georgios Litos, Thessaloniki, Greece
   email: giorgoslytos@gmail.com
   github: https://github.com/giorgoslytos
-  Google Fonts - https://fonts.google.com/
-  Terms of Service - https://policies.google.com/terms?hl=en
 */
 var hue;
 var saturation;
@@ -16,23 +14,33 @@ canvas.addEventListener("mousemove", hueHSL);
 canvas.addEventListener("wheel", lightHSL);
 canvas.addEventListener("mousemove", writeHSL);
 canvas.addEventListener("mousemove", writeRGB);
+
 //freeze on click
 canvas.addEventListener("click", freeze);
 var eventListenerFlag = 0;
 
 //alert on resize
-window.addEventListener("resize", onResize);
-
+window.addEventListener("resize", onResize1);
+window.addEventListener("resize", onResize2);
 if (window.innerHeight < 590) {
   window.alert("this web app may malfunction for window height less than 590 pixels");
 }
-
-function onResize(event) {
+if (window.innerWidth < 1034) {
+  window.alert("this web app may malfunction for window width less than 590 pixels");
+}
+function onResize1(event) {
   if (window.innerHeight < 590) {
     window.alert("this web app may malfunction for window height less than 590 pixels");
-    window.removeEventListener("resize", onResize);
+    window.removeEventListener("resize", onResize1);
   }
 }
+function onResize2(event) {
+  if (window.innerWidth < 1034) {
+    window.alert("this web app may malfunction for window width less than 590 pixels");
+    window.removeEventListener("resize", onResize2);
+  }
+}
+
 //call createCanvasJS to initialize the canvas
 createCanvas(50);
 
@@ -45,6 +53,7 @@ function hueHSL(event) {
     "hsl(" + hue + ", " + saturation + "%, " + -lightness + "%)";
   eventListenerFlag = 1;
 }
+
 // control lightness levels
 async function lightHSL(event) {
   if (-lightness >= 0 && lightness >= -100) {
