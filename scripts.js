@@ -26,7 +26,7 @@ if (window.innerHeight < 590) {
   window.alert("this web app may malfunction for window height less than 590 pixels");
 }
 if (window.innerWidth < 1034) {
-  window.alert("this web app may malfunction for window width less than 590 pixels");
+  window.alert("this web app may malfunction for window width less than 1034 pixels");
 }
 function onResize1(event) {
   if (window.innerHeight < 590) {
