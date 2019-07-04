@@ -55,9 +55,9 @@ function hueHSL(event) {
 }
 
 // control lightness levels
-async function lightHSL(event) {
+function lightHSL(event) {
   if (-lightness >= 0 && lightness >= -100) {
-    lightness += event.deltaY * 0.02;
+    lightness += event.deltaY * 0.01;
     if (-lightness < 0) {
       lightness = 0;
     }
@@ -67,7 +67,14 @@ async function lightHSL(event) {
   }
   backColor =
     "hsl(" + hue + ", " + saturation + "%, " + -lightness + "%)";
-  await createCanvas(-lightness);
+  createCanvas(-lightness);
+  var rect = canvas.getBoundingClientRect();//paint the canvas
+  hue = Math.floor((event.pageX - rect.left) / 2);
+  saturation = Math.floor((event.pageY - rect.top) / 2);
+  document.body.style.backgroundColor =
+    "hsl(" + hue + ", " + saturation + "%, " + -lightness + "%)";
+  writeHSL();
+  writeRGB();
 }
 
 //Writing down the results
