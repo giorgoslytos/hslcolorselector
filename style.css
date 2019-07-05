@@ -53,18 +53,6 @@ h3{
 #scrollpad:hover + .tooltip {
   visibility: visible;
 }
-/* .tooltip {
-  position: absolute;
-  visibility: hidden;
-  width: 720px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  padding: 2px;
-  top: -30px;
-  left: 50%;
-  margin-left: -150px;
-  text-align: center;
-} */
 #saturationlabel {
   position: absolute;
   writing-mode: vertical-rl;
@@ -72,6 +60,7 @@ h3{
   right: -28px;
   /* height: 12rem;
   width: 2rem; */
+  top: 0px;
   text-align: center;
   height: 200px;
   background: rgba(0, 0, 0, 0.5);
@@ -99,7 +88,7 @@ margin-left: 110px;
 }
 .scrollpad-wrapper {
   position: relative;
-  margin: 2rem auto;
+  margin: 1rem auto;
   /* margin: 0 auto; */
   width: 720px;
   height: 200px;
@@ -128,7 +117,7 @@ margin-left: 110px;
 
 
 }
-.RGBhexcode {
+.RGBhexcode{
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   padding: 1em;
@@ -144,8 +133,22 @@ margin-left: 110px;
 .HSLcode, .RGBcode{
   position: relative;
 }
-@media only screen and (max-height: 590px) {
-  body {
-    background-color: lightblue;
-  }
+#footer{
+  margin: 0em;
+padding: 1em;
+}
+#upper-sector{
+  border-bottom: 2px groove white;
+}
+a{
+  text-decoration-line: none;
+}
+a:hover{
+  color: rgba(255, 255, 255, 0.4);
+  transition: 1s ease
+}
+#github::after{
+   font-family: "Font Awesome 5 Free"; 
+  content: " \f126 "; 
+  font-weight: 900;
 }

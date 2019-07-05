@@ -11,6 +11,7 @@ lightness = -50;
 var canvas = document.getElementById("scrollpad");
 var ctx = canvas.getContext('2d');
 canvas.addEventListener("mousemove", hueHSL);
+
 canvas.addEventListener("wheel", lightHSL);
 canvas.addEventListener("mousemove", writeHSL);
 canvas.addEventListener("mousemove", writeRGB);
@@ -57,7 +58,10 @@ function hueHSL(event) {
 // control lightness levels
 function lightHSL(event) {
   if (-lightness >= 0 && lightness >= -100) {
-    lightness += event.deltaY * 0.01;
+    if (event.deltaY > 0)
+      lightness++;
+    if (event.deltaY < 0)
+      lightness--;
     if (-lightness < 0) {
       lightness = 0;
     }
