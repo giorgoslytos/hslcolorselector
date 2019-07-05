@@ -83,13 +83,12 @@ h3{
 .tooltip{
   top:-30px;
   visibility: hidden;
-width: 500px;
-margin-left: 110px;
+  width: 500px;
+  margin-left: 110px;
 }
 .scrollpad-wrapper {
   position: relative;
   margin: 1rem auto;
-  /* margin: 0 auto; */
   width: 720px;
   height: 200px;
 }
@@ -106,7 +105,6 @@ margin-left: 110px;
   padding: 1em;
   margin: auto;
   min-width: 280px;
-
 }
 .RGBcode {
   background: rgba(0, 0, 0, 0.5);
@@ -114,8 +112,6 @@ margin-left: 110px;
   padding: 1em;
   margin: auto;
   min-width: 280px;
-
-
 }
 .RGBhexcode{
   background: rgba(0, 0, 0, 0.5);
@@ -124,18 +120,19 @@ margin-left: 110px;
   margin: auto;
   min-width: 280px;
   position: relative;
-
 }
 #RGBcode, #HSLcode, #RGBhexcode, #hue, #saturation, #lightness, #red, #green, #blue{
   position: absolute;
   right: 20px;
 }
-.HSLcode, .RGBcode{
+.HSLcode, .RGBcode, .RGBhexcode{
   position: relative;
+  height: 120px;
 }
 #footer{
   margin: 0em;
-padding: 1em;
+  padding: 1em;
+  text-align: center;
 }
 #upper-sector{
   border-bottom: 2px groove white;
