@@ -149,3 +149,15 @@ a:hover{
   content: " \f126 "; 
   font-weight: 900;
 }
+
+@media only screen and (min-width: 1600px){
+  section{
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+}
+@media only screen and (min-height: 800px){
+  body{
+    margin-top: 6em;
+  }
+}

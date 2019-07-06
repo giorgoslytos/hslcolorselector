@@ -6,7 +6,7 @@
 var hue;
 var saturation;
 var lightness;
-document.body.style.backgroundColor = "hsl(100, 50%, 50%)";
+document.body.style.backgroundColor = "hsl(160, 45%, 50%)";
 lightness = -50;
 var canvas = document.getElementById("scrollpad");
 var ctx = canvas.getContext('2d');
