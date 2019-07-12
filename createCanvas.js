@@ -8,16 +8,13 @@ function createCanvas(light) {
   canvas.width = 722;
   canvas.height = 202;
   var c = canvas.getContext('2d');
-  class Pixel {
-    constructor(i, j) {
-      this.hue = i;
-      this.saturation = j;
-      this.i = i * 2;
-      this.j = j * 2;
-      c.fillStyle = 'hsl(' + this.hue + ',' + this.saturation + '%,' + light + '%)';
-      c.fillRect(this.i, this.j, 2, 2);
-
-    }
+  function Pixel(i, j) {
+    this.hue = i;
+    this.saturation = j;
+    this.i = i * 2;
+    this.j = j * 2;
+    c.fillStyle = 'hsl(' + this.hue + ',' + this.saturation + '%,' + light + '%)';
+    c.fillRect(this.i, this.j, 2, 2);
   }
 
   // creating pixelArray of Pixels 
